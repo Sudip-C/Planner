@@ -1,7 +1,10 @@
+import { debounce } from "./utils.js";
+
 const input = document.getElementById("input-box");
 const button = document.getElementById("add-button");
 const tags = document.querySelectorAll(".items");
 const planList = document.getElementById("plans-container");
+const searchInput = document.getElementById("search-input");
 
 let selectedTag = null;
 
@@ -19,7 +22,15 @@ function addPlan() {
   renderPlans(plans);
 }
 
+const handleSearch = debounce(() => {
+  const keyword = searchInput.value.toLowerCase();
+  const filteredPlans = plans.filter(plan =>
+    plan.title.toLowerCase().includes(keyword)
+  );
+  renderPlans(filteredPlans);
+}, 300);
 
+searchInput.addEventListener("input", handleSearch);
 
 function renderPlans(plans) {
   planList.innerHTML = ""; // clear existing items
