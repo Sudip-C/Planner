@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+#title{
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+#input-box{
+    padding: 10px;
+    border-radius: 10px;
+}
+#add-button{
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
