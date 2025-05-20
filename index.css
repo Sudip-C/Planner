@@ -1,12 +1,12 @@
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding: 20px;
 }
-#title{
-    font-size: 30px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+
+#container{
 }
 #input-box{
     padding: 10px;
@@ -15,5 +15,20 @@ body{
 #add-button{
     padding: 10px;
     border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
+}
+#tag-container{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.items{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.items.selected{
+background-color: #007bff;
+  color: white;
 }
