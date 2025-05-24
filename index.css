@@ -13,24 +13,21 @@ body {
   display: flex;
   gap: 15px;
   flex-direction: column;
-  align-items: center;
   width: 100%;
-  height: 86dvh;
-  border: 2px solid red;
+  height: 88dvh;
   
 }
 #container{
   display: flex;
   align-items: center;
   gap: 20px;
-    border: 2px solid red;
 
 }
 #input-box,
 #search-input {
   padding: 10px;
   border-radius: 10px;
-  /* margin: 10px; */
+  
 }
 #add-button {
   padding: 10px;
@@ -42,7 +39,6 @@ body {
 #tag-container {
   margin-top: 20px;
   margin-bottom: 50px;
-    border: 2px solid red;
 
 }
 .items {
@@ -57,13 +53,14 @@ body {
   color: white;
 }
 #plans-container {
-  max-height: 75%;
+  max-height: 90%;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 8px;
   border-top: 2px solid gray;
   padding-top:10px ;
+
 }
 #plans-container::-webkit-scrollbar {
   display: none;
@@ -96,24 +93,23 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
+#clear-all:hover{
+  background-color: rgb(157, 157, 157);
+}
 .back-to-top {
-  position: fixed; /* changed from absolute */
-  bottom: 20px;
-  right: 20px;
   opacity: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
   pointer-events: none;
-  background-color: #2d73db;
-  color: white;
-  /* border: none; */
-  border-radius: 50%;
-  padding: 10px 15px;
+  color: black;
+  border-radius: 10px;
+  padding: 10px; 
   font-size: 14px;
   cursor: pointer;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: opacity 0.3s ease;
-  height: 80px;
-  width: 80px;
+  
 }
 
 .back-to-top.show {
@@ -122,9 +118,14 @@ body {
 }
 
 .back-to-top:hover {
-  background-color: #1c6be0;
+  background-color: #abc1e3;
 }
 
+#button-container{
+display: flex;
+justify-content: end;
+gap: 15px;
+}
 
 
 @media (min-width:1024px){

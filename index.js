@@ -109,15 +109,16 @@ clearAll.addEventListener("click", () => {
 });
 
 function handleScroll() {
-  if (container.scrollTop > -100) {
+  if (container.scrollTop > 50) {
     backToTopBtn.classList.add("show");
   } else {
     backToTopBtn.classList.remove("show");
   }
 }
 
-container.addEventListener("scroll", throttle(handleScroll, 100));
+container.addEventListener("scroll", throttle(handleScroll, 50));
 
 backToTopBtn.addEventListener("click", () => {
   container.scrollTo({ top: 0, behavior: "smooth" });
+
 });
