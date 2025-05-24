@@ -2,6 +2,7 @@
 
 A lightweight and responsive task planner built using **HTML**, **CSS**, and **Vanilla JavaScript**. This app allows you to manage your daily tasks with tagging, completion tracking, and persistent storage using `localStorage`.
 
+Checkout our app : Link[https://resilient-frangollo-9d46ce.netlify.app/]
 ---
 
 ## 🚀 Features
